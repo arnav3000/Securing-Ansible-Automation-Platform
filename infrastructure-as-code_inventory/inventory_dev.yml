@@ -5,24 +5,24 @@ all:
       hosts:
         127.0.0.1:
       vars:
-        connection: local
+        ansible_connection: local
     automationcontroller:
       hosts:
-        HERE:
+        aap:
 
     automationhub:
       hosts:
-        HERE:
+        192.168.0.45:
 
     # can be automationhub if you do not have a specific server for this
     builder:
       hosts:
-        HERE:
+        192.168.0.45:
 
     # only needed if installing AAP with automation, can be removed if you are not
     database:
       hosts:
-        HERE:
+        192.168.0.45:
   vars:
     env: dev
 ...
