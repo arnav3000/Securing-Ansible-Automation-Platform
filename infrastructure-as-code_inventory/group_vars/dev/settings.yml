@@ -1,3 +1,8 @@
 ---
-controller_settings_dev: []
+controller_settings_dev: [
+  "AD_HOC_COMMANDS": [
+    "ping",
+    "win_ping"
+    ],
+]
 ...
