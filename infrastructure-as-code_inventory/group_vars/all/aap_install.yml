@@ -28,7 +28,7 @@ aap_setup_prep_inv_vars:
     pg_port: '5432'
     pg_database: 'awx'
     pg_username: 'awx'
-    pg_sslmode: 'prefer'  # set to 'verify-full' for client-side enforced SSL
+    pg_sslmode: 'disable'  # set to 'verify-full' for client-side enforced SSL
     automationhub_admin_password: "{{ ansible_password | default('Password1234!') }}"
     # automationhub_importer_settings: ""
     automationhub_require_content_approval: true
@@ -43,7 +43,7 @@ aap_setup_prep_inv_vars:
     automationhub_pg_database: 'automationhub'
     automationhub_pg_username: 'automationhub'
     automationhub_pg_password: "{{ ansible_password | default('Password1234!') }}"
-    automationhub_pg_sslmode: 'prefer'  # set to 'verify-full' for client-side enforced SSL
+    automationhub_pg_sslmode: 'disable'  # set to 'verify-full' for client-side enforced SSL
     # sso_keystore_password: "{{ ansible_password | default('Password1234!') }}"
     # automationhub_main_url: 'https://automationhub.ansible.com'
     postgres_use_ssl: false
