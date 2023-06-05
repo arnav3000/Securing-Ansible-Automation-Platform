@@ -9,6 +9,8 @@ all:
     automationcontroller:
       hosts:
         192.168.0.21:
+      vars:
+        ansible_connection: local
 
     automationhub:
       hosts:
