@@ -22,9 +22,9 @@ all:
         192.168.0.5:
 
     # only needed if installing AAP with automation, can be removed if you are not
-    database:
-      hosts:
-        192.168.0.5:
-  vars:
-    env: dev
+#    database:
+#      hosts:
+#        192.168.0.5:
+#  vars:
+#    env: dev
 ...
