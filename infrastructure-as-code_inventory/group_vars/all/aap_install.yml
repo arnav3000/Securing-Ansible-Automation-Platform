@@ -38,7 +38,7 @@ aap_setup_prep_inv_vars:
     # automationhub_ssl_cert: ""
     # automationhub_ssl_key: ""
     # automationhub_backup_collections: ""
-    automationhub_pg_host: "{{ ah_db_host | default(aap_setup_prep_inv_nodes['database'][1]) | default(aap_setup_prep_inv_nodes['database'][0]) | default('\"\"') }}"
+    automationhub_pg_host: "{{ ah_db_host | default(aap_setup_prep_inv_nodes['database'][0]) }}"
     automationhub_pg_port: '5432'
     automationhub_pg_database: 'automationhub'
     automationhub_pg_username: 'automationhub'
