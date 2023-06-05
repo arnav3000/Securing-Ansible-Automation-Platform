@@ -3,12 +3,12 @@ all:
   children:
     dev:
       hosts:
-        192.168.0.21:
+        127.0.0.1:
       vars:
         ansible_connection: local
     automationcontroller:
       hosts:
-        '192.168.0.21 ansible_connection=local':        
+        192.168.0.21:        
     automationhub:
       hosts:
         192.168.0.5:
