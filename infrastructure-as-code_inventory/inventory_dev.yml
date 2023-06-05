@@ -8,17 +8,19 @@ all:
         ansible_connection: local
     automationcontroller:
       hosts:
-        '192.168.0.21 ansible_connection=local':           
+        '192.168.0.21 ansible_connection=local':
+    automationcontroller:vars:
+      peers: execution_nodes
     automationhub:
       hosts:
         192.168.0.5:
-    # can be automationhub if you do not have a specific server for this
+    # can be automini to ationhub if you do not have a specific server for this
     builder:
       hosts:
         192.168.0.5:
     database:
       hosts:
-        192.168.0.21:
+        
   vars:
     env: dev
 ...
